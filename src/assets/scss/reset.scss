@@ -1,0 +1,291 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+cite,
+code,
+em,
+img,
+strong,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  -webkit-text-fill-color: #3E3E3E !important;
+}
+
+img {
+  display: block;
+  height: auto;
+  border: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1em;
+}
+
+/** 重置文本格式元素 **/
+
+a {
+  text-decoration: none;
+  color: #666;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:visited,
+button:focus {
+  outline: none;
+}
+
+a:active,
+a:link,
+a:visited {
+  border: none;
+  outline: none;
+}
+
+i {
+  font-style: normal;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/** 重置表格元素 **/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  outline: none;
+  background: transparent;
+}
+
+/*::-webkit-scrollbar {
+       width: 0px;
+       background: transparent;
+   }
+    ::-webkit-scrollbar-thumb {
+       border-radius: 0px;
+       background-color: transparent;
+   }
+@media screen and (min-width:800px) {
+    ::-webkit-scrollbar {
+       width: 15px;
+       background: transparent;
+   }
+    ::-webkit-scrollbar-thumb {
+       border-radius: 15px;
+       background-color: #ddd;
+   }
+}*/
+
+body {
+  font-family: sans-serif;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  //   -webkit-user-select: none;
+  //  -moz-user-select: none;
+  //  -ms-user-select: none;
+  //  user-select: none;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+input,
+textarea,
+button {
+  //  -webkit-appearance: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: "微软雅黑", Helvetica, "microsoft yahei", "Arial", "Verdana", "sans-serif";
+}
+
+/*组件性*/
+
+.zgh-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*ie10以上 文本能否被选中*/
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.zgh-btn:hover {
+  color: #333;
+  background-color: #eee;
+}
+
+.zgh-btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+/*input   type="text"*/
+
+.form-text {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #999;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .075), 0 0 1px rgba(102, 175, 233, .6);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-text:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
